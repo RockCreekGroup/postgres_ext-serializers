@@ -9,4 +9,4 @@ end
 require 'postgres_ext/serializers/active_model'
 require 'active_model_serializers'
 
-ActiveModel::ArraySerializer.send :prepend, PostgresExt::Serializers::ActiveModel::ArraySerializer
+ActiveModel::Serializer::ArraySerializer.send :prepend, PostgresExt::Serializers::ActiveModel::ArraySerializer
